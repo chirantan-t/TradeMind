@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0a0e1a;
+  --color-bg-card: #0d1b2a;
+  --color-bg-card-hover: #112240;
+  --color-border: #1e3a5f;
+  --color-border-light: #1a2d47;
+  --color-accent: #14b8a6;
+  --color-accent-dim: #0d9488;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-buy: #10b981;
+  --color-hold: #f59e0b;
+  --color-sell: #ef4444;
+  --color-bull: #10b981;
+  --color-bear: #ef4444;
+  --color-sideways: #64748b;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--color-bg-primary); }
+  ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+}

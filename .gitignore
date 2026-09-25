@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+.env
+
+# Project specific
+backend/artifacts/
+backend/data/raw/
+backend/data/processed/
+backend/trademind.db
+backend/test.csv
+
+# OS generated files
+.DS_Store
+Thumbs.db
